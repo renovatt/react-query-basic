@@ -2,7 +2,7 @@
 
 import SmallLoading from './SmallLoading'
 import { useSkillsQuery } from '@/hooks/useSkillsQuery'
-import { ErrorMessageResponse, SkillsResponse } from '../@types'
+import { ErrorMessageResponse, SkillsResponse } from '@/@types'
 
 const ListSkills = () => {
     const {

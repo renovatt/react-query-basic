@@ -2,7 +2,7 @@
 
 import SmallLoading from './SmallLoading';
 import { useSoftskillsQuery } from '@/hooks/useSoftskillsQuery';
-import { ErrorMessageResponse, SoftskillsResponse } from '../@types'
+import { ErrorMessageResponse, SoftskillsResponse } from '@/@types'
 
 const ListSoftskills = () => {
     const {

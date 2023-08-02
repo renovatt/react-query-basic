@@ -6,7 +6,7 @@ import {
     ProjectsResponse,
     SkillsResponse,
     SoftskillsResponse
-} from "@/app/@types";
+} from "@/@types";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL!;
 

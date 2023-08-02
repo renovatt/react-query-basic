@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import SmallLoading from './SmallLoading'
 import { useProjectsQuery } from '@/hooks/useProjectsQuery'
-import { ErrorMessageResponse, ProjectsResponse } from '../@types'
+import { ErrorMessageResponse, ProjectsResponse } from '@/@types'
 
 const ListProjects = () => {
     const {
