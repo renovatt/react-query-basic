@@ -1,0 +1,62 @@
+import {
+    APIProjectsResponse,
+    APISkillsResponse,
+    APISoftskillsResponse,
+    ErrorMessageResponse,
+    ProjectsResponse,
+    SkillsResponse,
+    SoftskillsResponse
+} from "@/app/@types";
+
+const BASE_URL = 'https://portfolio-api-renovatt.vercel.app';
+
+export const getProjects = async (): Promise<APIProjectsResponse> => {
+    try {
+        const response = await fetch(`${BASE_URL}/projects`);
+        const data: ProjectsResponse = await response.json();
+
+        if (response.ok) {
+            return { projects: data.projects };
+        } else {
+            const error: ErrorMessageResponse = new Error('Falha na solicitação com status: ' + response.status);
+            throw error;
+        }
+    } catch (error) {
+        const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.');
+        throw errorWithMessage;
+    }
+};
+
+export const getSkills = async (): Promise<APISkillsResponse> => {
+    try {
+        const response = await fetch(`${BASE_URL}/skills`);
+        const data: SkillsResponse = await response.json();
+
+        if (response.ok) {
+            return { skills: data.skills };
+        } else {
+            const error: ErrorMessageResponse = new Error('Falha na solicitação com status: ' + response.status);
+            throw error;
+        }
+    } catch (error) {
+        const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.');
+        throw errorWithMessage;
+    }
+};
+
+export const getSoftskills = async (): Promise<APISoftskillsResponse> => {
+    try {
+        const response = await fetch(`${BASE_URL}/softskills`);
+        const data: SoftskillsResponse = await response.json();
+
+        if (response.ok) {
+            return { softskills: data.softskills };
+        } else {
+            const error: ErrorMessageResponse = new Error('Falha na solicitação com status: ' + response.status);
+            throw error;
+        }
+    } catch (error) {
+        const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.');
+        throw errorWithMessage;
+    }
+};
