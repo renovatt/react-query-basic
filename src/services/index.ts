@@ -8,7 +8,7 @@ import {
     SoftskillsResponse
 } from "@/app/@types";
 
-const BASE_URL = 'https://portfolio-api-renovatt.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL!;
 
 export const getProjects = async (): Promise<APIProjectsResponse> => {
     try {
