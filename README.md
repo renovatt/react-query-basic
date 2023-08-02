@@ -6,7 +6,7 @@
 
 ### O [react-query](https://tanstack.com/query/latest/docs/react/overview) é uma ferramenta poderosa que simplifica a interação com APIs assíncronas, melhorando a experiência de desenvolvimento e tornando a implementação de funcionalidades como paginção, refetching automático e cache de dados mais fácil e eficiente. Com a combinação do [react-query](https://tanstack.com/query/latest/docs/react/overview) e os hooks personalizados criados neste projeto, tenho uma abordagem mais robusta e eficiente para lidar com o estado assíncrono em minha aplicação React, permitindo uma experiência de usuário mais fluida e responsiva.
 
-[Ver Projeto](https://dynamic-routers.vercel.app/)
+[Ver Projeto](https://react-query-basic-renovatt.vercel.app/)
 
 #
 
